@@ -15,7 +15,7 @@ node {
                 // pipelineHelper.stageCheckout
                 pipelineHelper.age = 21
                 pipelineHelper.increaseAge(10)
-                echo 'Incremented age, is now : ' + person.age
+                echo 'Incremented age, is now : ' + pipelineHelper.age
             }
             
         }
