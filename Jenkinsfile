@@ -12,7 +12,7 @@ node {
 
             script {
                 def pipelineHelper = new PipelineHelper()
-                pipelineHelper.stageCheckout()
+                pipelineHelper.stageCheckout
             }
             
         }
