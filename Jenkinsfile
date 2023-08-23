@@ -12,7 +12,10 @@ node {
 
             script {
                 def pipelineHelper = new PipelineHelper()
-                pipelineHelper.stageCheckout
+                // pipelineHelper.stageCheckout
+                pipelineHelper.age = 21
+                pipelineHelper.increaseAge(10)
+                echo 'Incremented age, is now : ' + person.age
             }
             
         }
