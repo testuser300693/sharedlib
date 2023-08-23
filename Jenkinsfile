@@ -10,7 +10,7 @@ node {
         }
         stage('callclass') {
             def pipelineHelper = new PipelineHelper()
-            pipelineHelper.build()
+            pipelineHelper.stageCheckout()
         }
     } catch (Exception e) {
         currentBuild.result = 'FAILURE'
