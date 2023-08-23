@@ -32,10 +32,11 @@ class SampleClass {
       this.age += years
    }
     def stageCheckout() {
-        stage('Checkout') {
-            echo "Checking out source code"
-            // checkout scm
-        }
+        echo "Checking out source code"
+        // stage('Checkout') {
+        //     echo "Checking out source code"
+        //     // checkout scm
+        // }
     }
 
  
