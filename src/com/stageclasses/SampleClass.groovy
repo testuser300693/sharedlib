@@ -1,3 +1,5 @@
+package com.stageclasses
+
 class PipelineHelper {
     // def build() {
     //     stageCheckout()
