@@ -31,8 +31,8 @@ class SampleClass {
     def increaseAge(Integer years) {
       this.age += years
    }
-    def stageCheckout() {
-        echo "Checking out source code"
+    def stageCheckout(none) {
+        return echo "Checking out source code"
         // stage('Checkout') {
         //     echo "Checking out source code"
         //     // checkout scm
