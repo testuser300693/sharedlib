@@ -11,7 +11,7 @@ node {
         stage('callclass') {
 
             script {
-                def pipelineHelper = new PipelineHelper()
+                def pipelineHelper = new SampleClass()
                 // pipelineHelper.stageCheckout
                 pipelineHelper.age = 21
                 pipelineHelper.increaseAge(10)
