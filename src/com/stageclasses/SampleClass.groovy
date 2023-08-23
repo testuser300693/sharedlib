@@ -3,6 +3,8 @@
 package com.stageclasses
 
 class PipelineHelper {
+    String name
+    Integer age
     // def build() {
     //     stageCheckout()
     //     stageBuild()
@@ -17,7 +19,9 @@ class PipelineHelper {
     // }
 
  
-
+    def increaseAge(Integer years) {
+      this.age += years
+   }
     def stageCheckout() {
         stage('Checkout') {
             echo "Checking out source code"
