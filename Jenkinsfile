@@ -9,8 +9,12 @@ node {
             sayHello 'Alex'
         }
         stage('callclass') {
-            def pipelineHelper = new PipelineHelper()
-            pipelineHelper.stageCheckout()
+
+            script {
+                def pipelineHelper = new PipelineHelper()
+                pipelineHelper.stageCheckout()
+            }
+            
         }
     } catch (Exception e) {
         currentBuild.result = 'FAILURE'
